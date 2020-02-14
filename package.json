@@ -1,0 +1,20 @@
+{
+  "name": "service-registry",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "web": "sucrase-node src/web.js",
+    "client": "sucrase-node src/client.js",
+    "serve": "sucrase-node src/index.js",
+    "build": "sucrase src --out-dir ./dist --transforms imports"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
+  }
+}
